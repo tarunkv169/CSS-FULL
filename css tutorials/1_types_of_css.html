@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tutorial to css (types of css)</title>
+
+    <!-- inline to set hai usse ist precedance mila gi -->
+
+    <!-- from internal and external which is written at after in head that get the precedance -->
+    
+    
+    
+    <!-- this is        INTERNAL CSS       style -->
+    <style>
+        span{
+            color: rgb(128, 5, 87) !important; 
+            /* writting important to get precendence */
+            background-color: rgb(188, 197, 108) !important;  
+        }
+    </style>
+
+
+
+
+    <!-- this is      EXTERNAL CSS       style -->
+    <!-- this is lower link to get precedance (this is a twist jo head mein baad mein likhi hai wo precedence leti hai (but there is one more twist of !important as written above in internal) )-->
+    <link rel="stylesheet" href="tut13.css">
+
+
+
+
+
+</head>
+<body>
+    <h3>syntax::selector{ property: value }</h3>
+    <!-- 3 types of css   (1.inline css)   (2.internal css)  (3.external css)    -->
+    <h3>we have three types of css &nbsp&nbsp1.inline css&nbsp&nbsp2.internal css&nbsp&nbsp 3.external css</h3>
+    <!-- inline takes the most precendence than(internal and external) if write concurrently -->
+    <h4>&rAarr;inline takes the most precendence&nbsp&nbsp&nbsp<br>&rAarr;from internal and external&nbspwhich is written after&nbsp takes precendence after inline <br>to give precedence to one from both write (!important) at the back</h4>
+    <br>
+    <br>
+
+
+
+    <!-- IST          INLINE CSS  -->
+    
+    <!-- <p style="color:rgb(64, 210, 149);background-color: rgb(88, 88, 175);"> giving color to text and background using inline css</p>
+    <span style="color:rgb(0, 255, 106);background-color: rgb(81, 81, 143);"> giving color to text and background using inline css</span> -->
+
+    <span>givin color to the text and background</span>
+    
+</body>
+</html>
