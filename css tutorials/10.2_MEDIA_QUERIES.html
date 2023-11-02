@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example of media queries</title>
+
+    <style>
+        .container
+        {
+            border: solid brown 5px;
+            background-color: aquamarine;
+            
+            display: flex;
+            flex-direction: row;       
+
+            width: 100%;           /*here using size property acc to this in below childs we use % of this */
+            height: 100%;
+
+            margin: 20px;
+            padding: 20px;
+        }
+
+        #boxleft
+        {
+            background-color: rgb(215, 119, 119);
+            border: dashed black 2px;
+
+            width: 45%;
+            height: 45%;
+
+            margin: 20px;
+            padding: 10px;
+
+            display: flex;
+            flex-direction: column;
+           
+        }
+        #boxright
+        {
+            background-color: rgb(179, 123, 50);
+            border: dashed black 2px;
+            
+            width: 32%;
+            height: 45%;
+
+            margin: 20px;
+            padding: 10px;
+
+            display: flex;
+        }
+
+        p{
+            border: solid greenyellow 4px;
+        }
+
+
+        @media (max-width: 600px)
+        {
+            .container
+            {
+                flex-wrap: wrap;
+            }
+
+            #boxleft, #boxright {               /*these 7-8 lines for text and image so that also sequeeze */
+                width: 100%;
+            }
+
+            #boxright img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div id="boxleft">
+            <p>This is a paragraph that will be displayed on large screens.</p>        
+            <p>This is a paragraph that will be displayed on large screens.</p>        
+            <button>submit</button>      
+        </div>
+
+        <div id="boxright">
+            <img src="tree.jpeg" alt="tree" width="200px" height="200px">
+        </div>
+
+    </div>
+</body>
+</html>
