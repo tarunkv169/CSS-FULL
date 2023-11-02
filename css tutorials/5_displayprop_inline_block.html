@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display properties</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@200&display=swap" rel="stylesheet">
+
+    <style>
+        #firstpara{
+            font-size: 25px;
+            font-weight: 500;
+            line-height: 30px;
+            font-family: 'Playpen Sans', cursive;
+
+            width: 300px;
+            height: 500px;
+            background-color: aqua;
+            
+            /* by default <p> is block but we make it inline with display prop */
+            display: inline;
+        }
+
+        span{
+            font-size: 25px;
+            font-weight: 500;
+            line-height: 30px;
+            font-family: 'Playpen Sans', cursive;
+
+            width: 300px;
+            height: 500px;
+            background-color: green;
+
+            /* by default <span> is inline but we make it block with display prop */
+            display: block;
+        }
+
+      #secondpara{
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 30px;
+        font-family: 'Playpen Sans', cursive;
+        background-color: rgb(181, 86, 190);
+
+        /* by default <p> is block but we make it inline-block(i.e it will behave as inline but prop of block will be applied and change it) with display prop */
+        display: inline-block;
+
+        width: 300px;
+
+
+      }
+
+    </style>
+</head>
+<body>
+    
+    <p id="firstpara">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Minima optio quasi tempore praesentium cum, qui officiis vero! Alias tempora
+         incidunt quos excepturi! Fugiat accusantium doloremque dolorum totam at distinctio illum?
+    </p>
+
+    <span>hi i am tarun</span>
+
+    <p id="secondpara">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Minima optio quasi tempore praesentium cum, qui officiis vero! Alias tempora
+         incidunt quos excepturi! Fugiat accusantium doloremque dolorum totam at distinctio illum?
+    </p>
+</body>
+</html>
