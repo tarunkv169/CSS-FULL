@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12_Animations_p_DTDCDFPN</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container
+        {
+            border: solid darkred 5px;
+            border-radius: 5px;
+            background-color: pink;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #box1
+        {
+            border: solid rgb(8, 71, 0) 5px;
+            border-radius: 12px;
+            background-color: rgb(125, 6, 26);
+            width: 200px;
+            height: 50px;
+
+            margin: 10px;
+
+            position: relative;
+
+            /* animation-name: rightmovement;
+
+            /* animation-duration: 5s;
+            /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);    /* ease, linear, ease in, ease out, ease in out, cubic-bezier() */
+            /* animation-delay: 2s;
+            /* animation-iteration-count: infinite;   /* 1,2,3.......infinite */
+            /* animation-direction: alternate;        /* normal, reverse, alterante, alteranete-reverse  */
+            /* animation-fill-mode: forwards;         /* none, backwards, forwards, both*/
+            /* animation-play-state: running;         /* paused, running */
+            
+            /* shorthand notation in sequence p_DTDCDFPN */
+            /*  animation: (duration) (timing-function) (delay) (iteration-count) (direction) (fill-mode) (play-state) (NAME);   */
+            animation: 3s cubic-bezier(0.4, 0, 0.58, 1) 0s infinite alternate none running rightmovement;
+
+        }
+
+        @keyframes rightmovement 
+            {
+                from
+                {
+                    top: 0px;
+                    left: 0px;
+                }
+
+                to
+                {
+                    top: 0px;
+                    left: 1300px;
+                }
+                
+            }
+
+        #box2
+        {
+            border: solid rgb(8, 71, 0) 5px;
+            border-radius: 12px;
+            background-color: rgb(125, 6, 26);
+            width: 200px;
+            height: 50px;
+
+            margin: 10px;
+
+            position: relative;
+            animation: 3s ease-in-out 0s infinite alternate none running leftmovement;
+        }
+
+        @keyframes leftmovement 
+        {
+            from{
+                top: 550px;
+                left: 1300px;
+            }
+
+            to{
+                top: 550px;
+                left: 0px
+            }
+        }
+
+        #circle
+        {
+            border: solid rgb(8, 71, 0) 3px;
+            border-radius: 50px;
+            background-color: rgb(125, 6, 26);
+            width: 100px;
+            height: 100px;
+            margin-top: 10px;
+            
+            position: relative;
+            top: 25%;
+            left: 40%;
+            animation: 5s ease-in-out 0s infinite alternate-reverse none running circlemovement;
+        }
+
+        @keyframes circlemovement 
+        {
+            0%{
+                top: 1%;
+                left: 5%;
+            }
+
+            30%{
+                top: 5%;
+                left: 90%;
+            }
+
+            60%{
+                top: 60%;
+                left: 10%;
+            }
+
+            100%{
+                top: 65%;
+                left: 90%;
+            }
+            
+        }
+            
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="circle"></div>
+    </div>
+</body>
+</html>
