@@ -6,24 +6,58 @@
     <title>Position Properties - SRAFS</title>
 
     <style>
-          .img1{
-            position: absolute;
+          #sunshine{
+            position: absolute;      /* pic will positioned acc to closest parent */
             top: 100px;
-            left: 400px;
+            left: 0px;
           }
 
           .container
           {
-            position: relative;
+            position: relative;       /* pic will positioned acc to current window*/
+            margin-top: 200px;
+            border: solid black 10px;
+            height: 2000px;
           }
+          
+        
+          #flowers
+          {
+            position: absolute;
+            top: 50px;
+            position: fixed;        /* pic will remain fixed in entire window*/
+            
+          }
+
+          .container_2
+          {
+            margin-top: 200px;
+            border: solid black 10px;
+            height: 2000px;
+          }
+
+          #personalone
+          {
+            position: sticky;       /* pic will remain sticky to particular parent container */
+            top: 100px;
+          }
+
+
     </style>
 </head>
 <body>
-    
-        <img class="img1" src="download (1).jpeg" alt="sunshine" height="300px" width="300px">
-        <img class="container" src="download.jpeg" alt="tree" height="300px" width="300px">
-        <!-- <img class="img1" src="pexels-photo-1353126.webp" alt="flowers" height="300px" width="300px">
-        <img class="img1" src="photo-1503023345310-bd7c1de61c7d.avif" alt="person alone" height="300px" width="300px"> -->
+    <div class="container">
+
+        <img id="sunshine" src="download (1).jpeg" alt="sunshine" height="300px" width="300px">
+        <img id="tree" src="download.jpeg" alt="tree" height="300px" width="300px">
+        <img id="flowers" src="pexels-photo-1353126.webp" alt="flowers" height="300px" width="300px">
+        <img id="personalone" src="photo-1503023345310-bd7c1de61c7d.avif" alt="person alone" height="300px" width="300px">
+    </div>
+
+    <div class="container_2">
+        <span>fixed flow in entire window</span>
+    </div>
+        
    
 </body>
 </html>
