@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media_queries</title>
+    <!-- Media queries is basically at what display size which css  (its tags,boxmodel,font,displayprop,postion,flexbox     which we learnt at back) should be applied  -->
+    <style>
+
+      .container
+       {
+          border: solid black 20px;
+          width: 100%;
+          height: 100vh;
+          display: flex;
+       }
+
+       .box
+       {
+          margin: 10px;
+          border: solid rgb(3, 0, 169) 5px;
+          width: 200px;
+          height: 200px;
+          /* background-color: #f4a7e7; */
+
+          text-align: center;                      /* these 4 lines to align content at exact centre of box*/
+          display: flex;
+          justify-content: center;
+          align-items: center;
+         
+       }
+
+       #box1
+       {
+          background-color: rgb(42, 18, 222);
+       }
+       #box2
+       {
+          background-color:  rgb(42, 18, 222);
+       }
+       #box3
+       {
+          background-color:  rgb(42, 18, 222);
+       }
+
+       @media (max-width:600px) and (min-width:400px)
+       {
+           .container
+           {
+              flex-direction: column;
+           }
+            #box1
+           {
+              background-color: orange;
+           }
+
+           #box2
+           {
+              background-color:  whitesmoke;
+           }
+           
+           #box3
+           {
+              background-color:  green;
+           }
+       }
+
+       @media (max-width: 400px)
+       {
+          .container
+          {
+            flex-wrap: wrap;
+          }
+       }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1"><strong>BOX_1</strong></div>
+        <div class="box" id="box2"><strong>BOX_2</strong></div>
+        <div class="box" id="box3"><strong>BOX_3</strong></div>
+        
+</body>
+</html>
