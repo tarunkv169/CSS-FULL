@@ -17,8 +17,10 @@
           /* flex-direction: row;
           flex-wrap: wrap-reverse; */
 
-          /* flex-flow: row wrap; */
-          /* justify-content: space-evenly; */
+          /* flex-flow: row wrap; */                    /* we can use both dir and wrap in shorthand notation */
+          
+
+          /* justify-content: space-evenly; */           /* justify-content, align-items, align-content---- floats the group of flex-items on window at given command */
           /* align-items: center; */
 
           /* align-content: start; */
@@ -31,7 +33,8 @@
           width: 200px;
           height: 200px;
           background-color: #f4a7e7;
-          text-align: center;
+
+          text-align: center;                      /* these 4 lines to align content at exact centre of box*/
           display: flex;
           justify-content: center;
           align-items: center;
@@ -41,29 +44,27 @@
        #box1
        {
           
-          align-self: center;
-          order: -1;
-          
+          order: -1;                               /* order ordered the particular flex-item on numberline */
+          flex-grow: 2;                            /* it grows particular flex-item  n times the other items */
        }
+
        #box2
        {
           
           order: -2;
-          /* flex-grow: 2; */
+          flex-shrink: 3;                         /* it shrink particular flex-item  n times the other items */
           
        }
+
        #box3
        {
-          
-          order: 1;
-          flex-shrink: 3;
+          flex-basis: 250px;                      /* it set the width particular flex-item  until it not going to shrink or grow properly*/
        }
+
        #box4
        {
-          
-
-          flex-basis: 250px;
-          
+         order: 1;
+         align-self: center;                     /* just like(justify-content, align-items, align-content)   it works for flex-items*/
        }
 
 
