@@ -6,6 +6,21 @@
     <title>11_shadow_effects_Box(OBSIM)_Text(OBIM)</title>
 
     <style>
+
+        :root                                       /* global variable */
+        {
+           --primary-color: rgb(210, 41, 41);
+        }
+
+
+        *{
+            margin: 0;                               /*set size(vw,vh) by box-sizing otherwise it goes out current panel and need to scroll */
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
         .container
         {
             border: solid  gray 2px;
@@ -20,24 +35,48 @@
 
         .box
         {
+            --costum-width: 330px;         /* local variable*/
             border:solid black 1px;
             background-color: aquamarine;
             margin: 5px;
             padding: 5px;
-            width: 330px;
+            width: var(--costum-width);
             height: 330px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+            box-sizing: border-box;
+            /* box-shadow_OBSIM */
+
+            /* box-shadow: 15px 10px brown;     /* O-only x(----++++ same as our graph x-axis) and y(+^+^+^-^-^-^- reverse of our graph y-axis(-ve above +ve down)) offsets and color also */
+        
+            /* box-shadow: -15px 10px 5px chocolate;  /* B- for blur shadow (high the px hight will blur) */
+       
+            /* box-shadow: 25px -20px 25px 100px brown;   /* S- for spread shadow */
+       
+            /* box-shadow: inset 15px 15px 15px brown;     /* I- for inside shadow */
+
+            /* box-shadow: 10px 10px brown, 20px 20px yellow, 30px 30px greenyellow;   /* M- for multiple shadows*/
         }
 
-        img{
-              flex-shrink: 1;
-        }
-        h2{
+        #head
+        {
+            color: var(--primary-color);
+            /* text-shadow_OBIM */
+            
+            text-shadow: 2px 10px rgb(70, 244, 54);     /* O-only x(----++++ same as our graph x-axis) and y(+^+^+^-^-^-^- reverse of our graph y-axis(-ve above +ve down)) offsets and color also
+        
+            /* text-shadow: -15px 10px 5px chocolate;  /* B- for blur shadow (high the px hight will blur) */
+       
+            /* text-shadow: inset 15px 15px 15px brown;     /* I- for inside shadow */
+
+            /* text-shadow: 10px 10px brown, 20px 20px yellow, 30px 30px greenyellow;   /* M- for multiple shadows*/
 
         }
+
+        
     </style>
 </head>
 <body>
