@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13_transitions_PDTD_HOVER</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container
+        {
+            background-color: bisque;
+            width: 100vw;
+            height: 100vh;
+            
+            
+        }
+
+        #box
+        {
+            margin: 10px;
+            width: 300px;
+            height: 200px;
+
+            font-size: 25px;
+            font-weight: 20px;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            background-color: blueviolet;
+            
+            /* transition-property: width;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0s; */
+
+            transition: all 1s linear 0s;
+        }
+
+        
+
+        #box:hover
+        {
+            width: 600px;
+            height: 600px;
+            color: rgb(51, 198, 41);
+            background-color: rgb(165, 36, 36);
+        }
+
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box">
+            its transition while u hover phaji
+        </div>
+    </div>
+</body>
+</html>
