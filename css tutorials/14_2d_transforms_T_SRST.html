@@ -17,6 +17,9 @@
             background-color: bisque;
             width: 100vw;
             height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         #box
@@ -34,22 +37,36 @@
             
             background-color: blueviolet;
             
-            /* transition-property: width;
-            transition-duration: 1s;
-            transition-timing-function: ease-in-out;
-            transition-delay: 0s; */
-
             transition: all 1s linear 0s;
         }
 
-        
+        p{
+          text-align: center;
+        }
 
         #box:hover
         {
-            width: 600px;
-            height: 600px;
-            color: rgb(51, 198, 41);
-            background-color: rgb(165, 36, 36);
+            /* transform: scale(2);  
+                transform: scale(-2); 
+
+            transform: rotate(360deg); 
+            transform: rotate(-360deg);
+
+            transform: skew(45deg);
+            transform: skew(-45deg);
+            transform: skewX(-45deg);
+            transform: skewY(-45deg);
+
+            transform: translateX(200px);
+            transform: translateY(200px); 
+            transform: translate(300px,300px);  /* x,y dirction moving*/
+
+
+            /* transform: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())"- a shorthand notation */
+
+
+            transform: matrix(1, 2, -1, 1, 80, 80);
+            
         }
 
         
@@ -59,7 +76,7 @@
 <body>
     <div class="container">
         <div id="box">
-            its transition while u hover phaji
+           <p> this is tarun </p>
         </div>
     </div>
 </body>
